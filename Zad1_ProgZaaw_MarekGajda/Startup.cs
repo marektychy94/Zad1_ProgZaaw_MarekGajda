@@ -8,6 +8,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Zad1_ProgZaaw_MarekGajda.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace Zad1_ProgZaaw_MarekGajda
 {
@@ -24,6 +26,8 @@ namespace Zad1_ProgZaaw_MarekGajda
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddDbContext<UsersContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("UsersContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
