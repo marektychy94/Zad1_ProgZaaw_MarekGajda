@@ -13,8 +13,4 @@
     <Content Remove="Views\Home\Index2.cshtml" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Views\Images\" />
-  </ItemGroup>
-
 </Project>
