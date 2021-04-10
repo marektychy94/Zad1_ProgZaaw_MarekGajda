@@ -20,6 +20,6 @@ namespace Zad1_ProgZaaw_MarekGajda.Models
         [Display(Name = "E-Mail")]
         public string Mail { get; set; }
         [Display(Name = "Wiek")]
-        public decimal Age { get; set; }
+        public int Age { get; set; }
     }
 }
